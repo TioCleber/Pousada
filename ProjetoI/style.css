@@ -73,13 +73,11 @@
 
 /*Seja bem-vindo*/
 #bemVindo{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
     height: 500px;
-    max-width: 100%;
+    max-width: 1200px;
     padding: 160px;
+    margin: 0 auto;
     line-height: 3em;
 }
 
@@ -123,13 +121,11 @@
 
 /*Rotas*/
 #rota{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+   text-align: center;
     height: 500px;
-    max-width: 100%;
+    max-width: 1200px;
     padding: 160px;
+    margin: 0 auto;
     line-height: 3em;
 }
 #rota h1{
@@ -145,13 +141,11 @@
 
 /*Sobre*/
 #sobre{
-    display: flex;
-    flex-direction: column;
     text-align: center;
-    align-items: center;
     height: 500px;
-    max-width: 100%;
+    max-width: 1200px;
     padding: 160px;
+    margin: 0 auto;
     line-height: 3em;
 }
 #sobre h1{
