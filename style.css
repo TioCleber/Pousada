@@ -1,0 +1,363 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: source sans pro;
+    list-style-position: inside;
+}
+
+
+/*Header*/
+.container{
+    margin: 0 auto;
+    width: 100%;
+    background: #e0d4bc;
+    height: 55px;
+    position: fixed;
+}
+.linha{
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 20px;
+}
+.linha span{
+    color: black;
+}
+.linha a{
+    color: #0089ffe3;
+    font-size: 1.5rem
+}
+.nav a{
+    padding: 4px;
+}
+
+
+/*Página Inicial*/
+#pagInicial{
+    background-image: url('./fontes/assets/img-fundo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pousada{
+    background: rgba(67, 173, 142, 0.7);
+    max-width: 550px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    height: 200px;
+    border: solid;
+    border-color: white;
+}
+#pousada h1{
+    font-weight: bold;
+    font-size: 2.8em;
+    color: white;
+    padding-bottom: 20px;
+}
+#pousada p{
+    font-size: 1.5em;
+    color: white;
+}
+
+
+/*Informação da página Seja bem-vindo, Rota e Sobre */
+.infoPag{
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 3em;
+    margin-bottom: 100px;
+    padding-top: 100px;
+}
+
+.infoPag h1{
+    font-size: 2.8em;
+    font-weight: bold;
+    padding: 7px;
+}
+.infoPag p{
+    font-size: 1.4em;
+    padding-top: 5px;
+}
+
+
+/*Página Quartos*/
+.infoQuarto{
+    max-width: 1200px;
+    margin: 0 auto;
+    line-height: 3em;
+    margin-bottom: 80px;
+    padding-top: 80px;
+}
+.infoQuarto h3{
+    text-align: center;
+}
+.infoFlex{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.ulMeio{
+    display: flex;
+    width: 400px;
+    justify-content: space-around;
+}
+
+
+
+
+/*Quartos*/
+#quartos{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.imgQuartos{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+}
+.imgQuartos img{
+    width: 550px;
+    height: 340px;
+}
+.imgQuartos p{
+    border-bottom: solid;
+    padding: 20px;
+    font-size: 1.6em;
+    color: black;
+    border-color: rgb(67, 173, 142);
+}
+
+/*Descrição Sobre*/
+#descrição{
+    display: flex;
+    max-width: 1600px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+}
+#subDescrição{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    align-items: center;
+    justify-content: center;
+}
+#seçãoDescrição{
+    width: 490px;
+    padding: 30px;
+}
+#seçãoDescrição h2{
+    padding-bottom: 20px;
+}
+.imgDescrição{
+    width: 225px;
+    height: 250px;
+    object-fit: cover;
+    margin-left: 10px;
+}
+
+
+/*Footer*/
+footer{
+    background: #43AD8E;
+    margin-top: 100px;
+}
+#comunicado{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1550px;
+    margin: 0 auto;
+    justify-content: space-around;
+    padding: 20px;
+}
+#infoContato{
+    padding: 15px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: white;
+}
+.paragrafoContato a{
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+}
+.paragrafoContato p{
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    width: 190px;
+}
+#copy{
+    max-width: 1550px;
+    margin: 0 auto;
+}
+#copy p{
+    text-align: center;
+    border-top: solid;
+    border-color: seagreen;
+    border-width: thin;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+
+
+
+
+/*Media*/
+@media only screen and (max-width: 1460px){
+    #seçãoDescrição{
+        width: 400px;
+        padding: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 840px){
+    .infoFlex{
+        display: block;
+        width: 235px;
+        margin: 0 auto;
+    }
+    .ulMeio{
+        display: block;
+        width: auto;
+    }
+}
+
+
+@media only screen and (max-width: 500px){
+    .imgQuartos img{
+        width: 425px;
+        height: 250px;
+    }
+    #pousada{
+        max-width: 490px;
+        padding: 30px;
+    }
+   #seçãoDescrição{
+    width: 480px;
+    padding: 30px;
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 425px){
+    .imgQuartos img{
+        width: 350px;
+        height: 220px;
+    } 
+    .imgQuartos{
+        width: 350px;
+        font-size: 0.8em;
+    }
+    #seçãoDescrição{
+        width: 300px;
+        padding: 30px;
+        text-align: center;
+    }
+    #pousada{
+        max-width: 400px;
+        padding: 30px;
+    }
+    .nav{
+        display: flex; 
+    }
+    .linha a{
+        font-size: 1.3em; 
+     }
+}
+
+
+@media only screen and (max-width: 375px) {
+    .imgQuartos img{
+        width: 250px;
+        
+    } 
+    .imgQuartos{
+        width: 250px;
+        font-size: 0.8em;
+    }
+    #pousada{
+        max-width: 340px;
+        padding: 30px;
+    }
+    #pousada h1{
+        font-size: 2em;
+    }
+    .linha a{
+       font-size: 1.1em; 
+    }
+    .infoPag h1{
+        font-size: 1.9em;
+    }
+    .infoPag p{
+        font-size: 1.4em;
+    }
+    #seçãoDescrição{
+        width: 300px;
+        padding: 30px;
+        text-align: center;
+    }
+
+}
+
+
+}
+@media only screen and (max-width: 325px) {
+    .imgQuartos img{
+        width: 220px;
+    }
+    .imgQuartos{
+        width: 220px;
+        font-size: 0.8em;
+    }
+    #seçãoDescrição{
+        width: 300px;
+        padding: 30px;
+        text-align: center;
+    }
+    #pousada{
+        max-width: 300px;
+        padding: 30px;
+    }
+    #pousada h1{
+        font-size: 2em;
+    }
+    #pousada p{
+        font-size: 1.2em;
+    }
+   .nav{
+        padding-left: 36px;
+    }
+    .infoPag h1{
+            font-size: 1.7em;
+    }
+    .infoPag p{
+        font-size: 1.2em;
+    }
+    #comunicado{
+        padding: 0;
+    }
+    .linha{
+        justify-content: center;
+    }
+
+}
+
+
